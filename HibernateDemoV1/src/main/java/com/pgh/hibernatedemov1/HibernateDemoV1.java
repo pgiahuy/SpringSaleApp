@@ -24,11 +24,6 @@ public class HibernateDemoV1 {
         ProductRepositoryImpl p = new ProductRepositoryImpl();
         List<Category> cates = c.getCates();
         
-        Map<String,String> map = new HashMap<>();
-        map.put("page", "2");
-        
-        List<Product> prods = p.getProducts(map);
-        for(var pro:prods)
-            System.out.printf("%d - %s\n", pro.getId(),pro.getName());
+       
     }
 }
